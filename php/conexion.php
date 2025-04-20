@@ -1,5 +1,5 @@
 <?php
-$servidor = "localhost";
+$servidor = "192.168.100.90";
 $usuario = "prueba";  // Tu usuario de MySQL
 $contrasena = "PdF32FEdataBase*";  // Tu contraseña de MySQL
 $base_datos = "plan_tutorial";  // Nombre de la base de datos
