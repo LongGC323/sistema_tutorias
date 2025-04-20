@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Búsqueda de Tutores</title>
+    <link rel="stylesheet" href="../css/BusquedaT.css">
+    <script defer src="../js/BusquedaT.js"></script>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Búsqueda de Tutores</h1>
+
+        <!-- Formulario de búsqueda -->
+        <form id="form-busqueda">
+            <input type="text" id="buscar-matricula" name="Buscar_tutor" 
+                   placeholder="Ingrese número de empleado" 
+                   autocomplete="off" required>
+            <button type="submit" id="boton-buscar">Buscar</button>
+            <button type="button" id="boton-cancelar-busqueda">Cancelar</button>
+        </form>
+
+        <!-- Mensaje de error -->
+        <div id="mensaje-error" style="display: none; color: red;">
+            Número de trabajador no existe.
+        </div>
+    </div>
+
+    <!-- Información del tutor -->
+    <div id="info-tutor" style="display: none;">
+        <h2>Información del Tutor</h2>
+        <div><strong>Nombre:</strong> <span id="nombre-tutor"></span></div>
+        <div><strong>Apellido Paterno:</strong> <span id="apellido-paterno-tutor"></span></div>
+        <div><strong>Apellido Materno:</strong> <span id="apellido-materno-tutor"></span></div>
+        <div><strong>Número de Teléfono:</strong> <span id="telefono-tutor"></span></div>
+        <div><strong>Correo:</strong> <span id="correo-tutor"></span></div>
+        <div><strong>Unidad de Estudios:</strong> <span id="unidad-estudios-tutor"></span></div>
+        <button id="boton-regresar">Regresar</button>
+        <button id="boton-modificar">Modificar</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/RegistroTutores.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <form action="#" method="post" id="FormularioTutor">
+        <h1>Formulario de Registro de Tutores</h1>
+
+        <div class="form-section">
+            <div class="section">
+                <label for="numeroEmpleado">Número de Empleado:</label>
+                <input type="text" id="numeroEmpleado" name="num_empleado" required 
+                    maxlength="8" oninput="validarNumeroEmpleado()" 
+                    title="Debe ser exactamente 8 números" pattern="^\d{8}$">
+            </div>
+            <div class="section">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" maxlength="45" required> 
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="section">
+                <label for="apellidoPaterno">Apellido Paterno</label>
+                <input type="text" id="apellidoPaterno" name="a_paterno" maxlength="45" required>
+            </div>
+            <div class="section">
+                <label for="apellidoMaterno">Apellido Materno</label>
+                <input type="text" id="apellidoMaterno" name="a_materno" maxlength="45" required>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="section">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="e_mail" maxlength="45" required>
+            </div>
+            <div class="section">
+                <label for="numTelefonico">Número Telefónico</label>
+                <input type="text" id="numTelefonico" name="num_telefonico" required 
+                    maxlength="10" oninput="validarNumeroTelefonico()" 
+                    title="Debe ser exactamente 10 números" pattern="^\d{10}$">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="section">
+                <label for="sexo">Género</label>
+                <select id="sexo" name="genero" required>
+                    <option value="">Seleccione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+            <div class="section">
+                <label for="gradoEstudio">Grado de Estudios</label>
+                <select id="gradoEstudio" name="grado_estudio" required>
+                    <option value="">Seleccione</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="section">
+                <label for="unidad">Unidad de Estudios:</label>
+                <select id="unidad" name="unidad" required>
+                    <option value="">Seleccione</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button>Registrar</button>
+            <button type="button" class="regresar" onclick="window.history.back()">Cancelar</button>
+        </div>
+    </form>
+    <script src="../js/RegistroTutores.js" defer></script>
+</body>
+</html>

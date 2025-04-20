@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../css/Login.css">
+    <script defer src="../js/Credenciales.js?v=1"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="login-form" id="loginForm">
+            <img src="../img/UMB.png" alt="Logo UMB" class="logo">
+            <h2>Iniciar Sesión</h2> 
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>  <!-- Se agregó el type="submit" -->
+            <p id="error-msg" class="error"></p>
+            
+        </form>
+    </div>
+</body>
+</html>

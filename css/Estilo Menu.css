@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ruta actualizada para acceder a la imagen de fondo */
+    background: url('../img/fondo.jpg') no-repeat center center/cover;
+    margin: 0;
+    position: relative;
+}
+
+/* Contenedor del menú */
+.menu {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 450px; /* Más ancho */
+    text-align: center;
+}
+
+/* Título del menú */
+.menu h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Contenedor de los botones en formato 2x2 con más separación */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* Más espacio entre los botones */
+}
+
+/* Estilos de los botones */
+.btn {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #9F2241, #9F2241); /* Degradado de color */
+    padding: 5px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover */
+.btn:hover {
+    background: linear-gradient(to right, #bc955b, #bc955b);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón de Cerrar sesión */
+.cerrar-sesion {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 24px;
+    background-color: #808080; /* Gris */
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover en cerrar sesión */
+.cerrar-sesion:hover {
+    background-color: #555;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}

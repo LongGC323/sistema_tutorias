@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Búsqueda de Tutorado</title>
+    <link rel="stylesheet" href="../css/BusquedaA.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Buscar Tutorados</h1>
+
+        <div id="formulario-busqueda">
+            <label for="Buscar_tutor">Matrícula del tutorado:</label>
+            <input type="text" name="Buscar_tutor" maxlength="8" placeholder="Ej: 12345678">
+            <button id="boton-buscar">Buscar</button>
+        </div>
+
+        <div id="mensaje-error" style="color: red; display: none; margin-top: 10px;"></div>
+
+        <div id="info-tutor" style="display: none; margin-top: 20px;">
+            <h2>Información del Tutorado</h2>
+            <p><strong>Nombre:</strong> <span id="nombre-tutor"></span></p>
+            <p><strong>Apellido Paterno:</strong> <span id="apellido-paterno-tutor"></span></p>
+            <p><strong>Apellido Materno:</strong> <span id="apellido-materno-tutor"></span></p>
+            <p><strong>Teléfono:</strong> <span id="telefono-tutor"></span></p>
+            <p><strong>Correo:</strong> <span id="correo-tutor"></span></p>
+            <p><strong>Edad:</strong> <span id="edad-tutor"></span></p>
+            <p><strong>Semestre:</strong> <span id="semestre-tutor"></span></p>
+            <p><strong>Fecha de ingreso:</strong> <span id="fecha-ingreso-tutor"></span></p>
+            <p><strong>Carrera:</strong> <span id="carrera-tutor"></span></p>
+            <p><strong>Grupo:</strong> <span id="grupo-tutor"></span></p>
+
+            <div style="margin-top: 20px;">
+                <button id="boton-regresar">Regresar</button>
+                <button id="boton-modificar">Modificar</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <button id="boton-cancelar-busqueda">Cancelar búsqueda</button>
+        </div>
+    </div>
+
+    <script src="../js/BusquedaA.js"></script>
+</body>
+</html>

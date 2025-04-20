@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/fondo.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/fondo.jpg') no-repeat center center/cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #9F2241;
+    margin-bottom: 15px;
+}
+
+#formulario-busqueda {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#formulario-busqueda table {
+    width: 100%;
+}
+
+#formulario-busqueda input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 5px;
+    width: calc(70% - 5px);
+    display: inline-block;
+}
+
+#formulario-busqueda button {
+    background-color: #9F2241;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#formulario-busqueda button:hover {
+    background-color: #bc955b;
+}
+
+#formulario-busqueda.ocultar {
+    opacity: 0;
+    display: none;
+}
+
+#info-tutor {
+    margin-top: 20px;
+    transition: opacity 0.5s ease-in-out;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    width: fit-content;
+    align-self: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+#info-tutor h2 {
+    color: #9F2241;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.campo-info {
+    margin-bottom: 6px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.campo-info strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#mensaje-error {
+    margin-top: 10px;
+    color: red;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.botones-info {
+    display: flex;
+    justify-content: flex-end; /* Alinear los botones a la derecha */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 15px; /* Espacio entre la información y los botones */
+}
+
+.botones-info button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+
+#boton-regresar {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#boton-regresar {
+    background-color: #9F2241;
+    color: white;
+}
+
+#boton-regresar:hover {
+    background-color: #bc955b;
+}
+
+#boton-modificar {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#boton-modificar {
+    background-color: #9F2241; 
+    color: white;   
+}
+
+#boton-modificar:hover {
+    background-color: #bc955b;
+}
+
+/* Estilos adicionales para la alineación del botón Cancelar */
+#formulario-busqueda table td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre el input y los botones */
+}
+
+#formulario-busqueda input[type="text"] {
+    flex-grow: 1; /* Permite que el input crezca para ocupar el espacio */
+
+     /* Estilos adicionales para la alineación del botón Cancelar */
+        #formulario-busqueda table td {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Espacio entre el input y los botones */
+        }
+
+        #formulario-busqueda input[type="text"] {
+            flex-grow: 1; /* Permite que el input crezca para ocupar el espacio */
+        }
+}
+
+#boton-cancelar-busqueda{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#boton-cancelar-busqueda{
+    background-color: #9F2241; 
+    color: white;  
+}
+
+#boton-cancelar-busqueda:hover {
+    background-color: #bc955b;
+}
